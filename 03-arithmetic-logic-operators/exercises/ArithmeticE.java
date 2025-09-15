@@ -24,39 +24,34 @@ public class ArithmeticE
 {
     public static void main(String[] args)
     {
-        int a = 10;
-        int b = 3;
-
-        // Addition
-        int sum = a + b;
-        System.out.println("Sum: " + sum); // Output: Sum: 13
-
-        // Subtraction
-        int difference = a - b;
-        System.out.println("Difference: " + difference); // Output: Difference: 7
-
-        // Multiplication
-        int product = a * b;
-        System.out.println("Product: " + product); // Output: Product: 30
-
-        // Division
-        int quotient = a / b;
-        System.out.println("Quotient: " + quotient); // Output: Quotient: 3
-
-        // Modulus
-        int remainder = a % b;
-        System.out.println("Remainder: " + remainder); // Output: Remainder: 1
-
-
         // -------------------- Student Exercises --------------------
         // 1. Create two int variables x and y, then perform all arithmetic operations.
-
+        int x = 10;
+        int y = 5;
+        int addition = x + y;
+        int substraction = x - y;
+        int multiplication = x * y;
+        int division = x / y;
+        int modulus = x % y;
+        System.out.println("Numbers: " + x + " and " + y);
+        System.out.println("Addition: " + addition);
+        System.out.println("Substraction: " + substraction);
+        System.out.println("Multiplication: " + multiplication);
+        System.out.println("Division: " + division);
+        System.out.println("Modulus: " + modulus);
         // 2. Try division with numbers that don’t divide evenly (e.g., 7 / 2).
-
+        System.out.println("Dividing 7 with 2");
+        int intDivision = 7 / 2;
+        System.out.println("Int: " + intDivision);
         // 3. Use double variables for division and compare with int division.
-
+        double betterDivision = (double) 7 / 2; // we need to cast it, since it's a float
+        System.out.println("Double: " + betterDivision);
         // 4. Create three int variables, add them, and print the total.
-
+        int numberOne = 6;
+        int numberTwo = 7;
+        int numberThree = 8;
+        int total = numberOne + numberTwo + numberThree;
+        System.out.println("The addition of " + numberOne + " " + numberTwo + " and " + numberThree + " is " + total);
         // 5. Calculate the square of a number (e.g., 6 * 6).
 
         // 6. Calculate the average of three numbers.
