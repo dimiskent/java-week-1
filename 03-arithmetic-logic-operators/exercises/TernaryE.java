@@ -22,23 +22,29 @@ public class TernaryE
 {
     public static void main(String[] args)
     {
-        int a = 10;
-        int b = 20;
-
-        // Using the ternary operator to find the maximum of two numbers
-        int max = (a > b) ? a : b;
-        System.out.println("The maximum value is: " + max);
-
-
         // -------------------- Student Exercises --------------------
         // 1. Create int x = 15, y = 25; use ternary to find minimum.
-
+        int numberOne = 15;
+        int numberTwo = 25;
+        int min = numberOne < numberTwo ? numberOne : numberTwo;
+        System.out.println("Minimum btw " + numberOne + " and " + numberTwo + ": " + min);
         // 2. Create int age = 18; use ternary to print "Adult" or "Minor".
-
+        int age = 18;
+        String ageGroup = age >= 18 ? "Adult" : "Minor";
+        System.out.println(ageGroup);
         // 3. Create int a = 10, b = 20, c = 15; use nested ternary to find largest.
-
+        int number1 = 10;
+        int number2 = 20;
+        int number3 = 15;
+        int largestNumber = (number1 > number2) ? (number1 > number3 ? number1 : number3) : (number2 > number3 ? number2 : number3);
+        System.out.println(largestNumber);
         // 4. Create boolean isRaining = true; use ternary to print umbrella advice.
-
+        boolean isRaining = true;
+        String message = isRaining ? "ITS RAINING TAKE AN UMBRELLA IN ORDER NOT TO GET WET" : "No advice needed";
+        System.out.println(message);
         // 5. Check if n = 7 is even or odd using ternary and print.
+        int n = 7;
+        boolean isEven = (double) n % 2 != 0 ? false : true;
+        System.out.println("Is " + n + " even? " + isEven);
     }
 }

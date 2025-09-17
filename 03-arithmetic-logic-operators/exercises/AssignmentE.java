@@ -29,36 +29,48 @@ public class AssignmentE
 {
     public static void main(String[] args)
     {
-        int a = 10; // Assignment
-        System.out.println("Initial value of a: " + a);
-
-        a += 5; // Addition assignment
-        System.out.println("After a += 5: " + a);
-
-        a -= 3; // Subtraction assignment
-        System.out.println("After a -= 3: " + a);
-
-        a *= 2; // Multiplication assignment
-        System.out.println("After a *= 2: " + a);
-
-        a /= 4; // Division assignment
-        System.out.println("After a /= 4: " + a);
-
-        a %= 3; // Modulus assignment
-        System.out.println("After a %= 3: " + a);
-
-
         // -------------------- Student Exercises --------------------
         // 1. Create an int variable b = 20 and use +=, -= with it.
-
+        int b = 20;
+        System.out.println("Current B value: " + b);
+        b += 5;
+        System.out.println("Current B value: " + b);
+        b -= 24;
+        System.out.println("Current B value: " + b);
         // 2. Create an int variable c = 15 and use *=, /= with it.
-
+        int c = 5;
+        System.out.println("Current C value: " + c);
+        c *= 6;
+        System.out.println("Current C value: " + c);
+        c /= 2;
+        System.out.println("Current C value: " + c);
         // 3. Use %= with c to find remainder when divided by 4.
-
+        c %= 4;
+        System.out.println("Division remainder: " + c);
         // 4. Create a double variable d = 12.5, then use += and *=.
-
+        double myNumber = 12.5;
+        System.out.println("Current number: " + myNumber);
+        myNumber += 3.5;
+        System.out.println("Current number: " + myNumber);
+        myNumber *= 0.7;
+        System.out.println("Current number: " + myNumber);
         // 5. Create x = 7, double it with +=, then square it with *=.
-
+        int x = 7;
+        System.out.println("Current X value: " + x);
+        x += 7;
+        System.out.println("Current X value: " + x);
+        x *= 7;
+        System.out.println("Current X value: " + x);
         // 6. Start y = 50, apply -= 10, *= 2, /= 5, %= 6 step by step.
+        int y = 50;
+        System.out.println("Current Y value: " + y);
+        y -= 10;
+        System.out.println("Current Y value: " + y);
+        y *= 2;
+        System.out.println("Current Y value: " + y);
+        y /= 5;
+        System.out.println("Current Y value: " + y);
+        y %= 6;
+        System.out.println("Current Y value: " + y);
     }
 }

@@ -25,32 +25,32 @@
 public class UnaryE
 {
     public static void main(String[] args) {
-        int a = 5;
-        int b = -a; // Unary minus
-        int c = +a; // Unary plus
-        boolean flag = true;
-        boolean notFlag = !flag; // Logical NOT
-        int x = 10;
-        x++; // Increment
-        int y = 10;
-        y--; // Decrement
-
-        System.out.println("Original a: " + a);
-        System.out.println("Unary minus b: " + b);
-        System.out.println("Unary plus c: " + c);
-        System.out.println("Original flag: " + flag);
-        System.out.println("Logical NOT notFlag: " + notFlag);
-        System.out.println("Incremented x: " + x);
-        System.out.println("Decremented y: " + y);
-
-
         // -------------------- Student Exercises --------------------
         // 1. Create int num = 8; apply unary minus and plus.
-
+        int num = 8;
+        System.out.println(num);
+        System.out.println(-num);
+        System.out.println(+num);
         // 2. Create boolean isOpen = false; invert it with !.
-
+        boolean isOpen = false;
+        System.out.println(isOpen);
+        isOpen = !isOpen;
+        System.out.println(isOpen);
         // 3. Create int counter = 0; use pre-increment and post-increment.
-
+        int counter = 0;
+        System.out.println(counter);
+        int counter2 = ++counter;
+        System.out.println(counter);
+        System.out.println(counter2);
+        int counter3 = counter++;
+        System.out.println(counter);
+        System.out.println(counter3);
         // 4. Create int count = 5; use pre-
+        int count = 5;
+        --count;
+        System.out.println(count);
+        ++count;
+        System.out.println(count);
+
     }
 }

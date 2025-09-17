@@ -53,9 +53,23 @@ public class ArithmeticE
         int total = numberOne + numberTwo + numberThree;
         System.out.println("The addition of " + numberOne + " " + numberTwo + " and " + numberThree + " is " + total);
         // 5. Calculate the square of a number (e.g., 6 * 6).
-
+        int square = 6 * 6;
+        System.out.println("6² is " + square);
         // 6. Calculate the average of three numbers.
-
+        int first = 1;
+        int second = 2;
+        int third = 3;
+        int average = (first + second + third) / 3;
+        System.out.println("Average: " + average);
         // 7. Try dividing a number by 0 (both int and double) and observe the behavior.
+        System.out.println("Dividing by zero!");
+        double doubleNumber = (double) 7 / 0;
+        System.out.println("With a double: " + doubleNumber);
+        try {
+            int intNumber = (int) 7 / 0;
+            System.out.println("With an int: " + intNumber);
+        } catch(Exception e) {
+            System.out.println("Error! " + e.getMessage());
+        }
     }
 }

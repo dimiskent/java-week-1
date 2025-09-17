@@ -24,36 +24,26 @@ public class LogicalE
 {
     public static void main(String[] args)
     {
-        boolean a = true;
-        boolean b = false;
-
-        // Logical AND
-        System.out.println("Logical AND (&&):");
-        System.out.println("true && true = " + (a && a));   // true
-        System.out.println("true && false = " + (a && b));  // false
-        System.out.println("false && false = " + (b && b)); // false
-
-        // Logical OR
-        System.out.println("\nLogical OR (||):");
-        System.out.println("true || true = " + (a || a));   // true
-        System.out.println("true || false = " + (a || b));  // true
-        System.out.println("false || false = " + (b || b)); // false
-
-        // Logical NOT
-        System.out.println("\nLogical NOT (!):");
-        System.out.println("!true = " + (!a));   // false
-        System.out.println("!false = " + (!b));  // true
-
-
         // -------------------- Student Exercises --------------------
         // 1. Create boolean x = true, y = false and test &&, ||, ! operators.
-
+        boolean trueBool = true;
+        boolean falseBool = false;
+        System.out.println("&& => " + (trueBool && falseBool));
+        System.out.println("|| =>" + (trueBool || falseBool));
+        System.out.println("!trueBool => " + !trueBool);
+        System.out.println("!falseBool => " + !falseBool);
         // 2. Create a = true, b = false, c = true; evaluate:
         //    (a && b) || c and !(a || b) && c
-
+        var thirdBool = true;
+        System.out.println("(trueBool && falseBool) || thirdBool => " + ((trueBool && falseBool) || thirdBool));
+        System.out.println("!(trueBool || falseBool) && thirdBool => " + (!(trueBool || falseBool) && thirdBool));
         // 3. Create int n = 15; check if n > 10 && n < 20,
         //    and n != 12 || n < 5.
-
+        int num = 15;
+        boolean checkOne = (num > 10 && num < 20);
+        boolean checkTwo =  (num != 12 || num < 5);
+        System.out.println("num > 10 && num < 20 gives " + checkOne);
+        System.out.println("num != 12 || num < 5 gives " + checkOne);
         // 4. Combine multiple logical operators with parentheses
         //    to test order of evaluation.
     }

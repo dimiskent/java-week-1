@@ -29,30 +29,51 @@ public class IfElseE
 {
     public static void main(String[] args)
     {
-        int number = 10;
-
-        if (number > 0)
-        {
-            System.out.println("The number is positive.");
-        }
-        else if (number < 0)
-        {
-            System.out.println("The number is negative.");
-        }
-        else
-        {
-            System.out.println("The number is zero.");
-        }
-
         // -------------------- Student Exercises --------------------
         // 1. Check if x is even or odd.
-
+        int myNumber = 5;
+        if(myNumber % 2 == 0) {
+            System.out.println("Even");
+        } else {
+            System.out.println("Odd");
+        }
         // 2. Check age and print "Adult" or "Minor".
-
+        int age = 18;
+        if(age >= 18) {
+            System.out.println("Adult");
+        } else {
+            System.out.println("Minor");
+        }
         // 3. Assign grades based on score using if-else if-else.
-
+        int grade = 49;
+        char gradeResult;
+        if(grade >= 90) {
+            gradeResult = 'A';
+        } else if(grade >= 75) {
+            gradeResult = 'B';
+        } else if (grade >= 50) {
+            gradeResult = 'C';
+        } else {
+            gradeResult = 'F';
+        }
+        System.out.println("Your grade is an " +gradeResult);
         // 4. Check temperature and print "Hot", "Warm", or "Cold".
-
+        String tempStatus;
+        int temperature = 30;
+        if(temperature > 30) {
+            tempStatus = "Hot";
+        } else if(temperature >= 20) {
+            tempStatus = "Warm";
+        } else {
+            tempStatus = "Cold";
+        }
+        System.out.println(tempStatus);
         // 5. Check if n is positive AND even using logical operators.
+        int n = 2;
+        boolean myCondition = false;
+        if(n >= 0 && n % 2 == 0) {
+            myCondition = true;
+        }
+        System.out.println(myCondition);
     }
 }
