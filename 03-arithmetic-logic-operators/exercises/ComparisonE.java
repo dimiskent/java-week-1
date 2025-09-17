@@ -68,8 +68,8 @@ public class ComparisonE
         System.out.println("Word match with == " + wordMatchLegacy);
         System.out.println("REGEX " + word2 + " match with .matches " + wordMatch2);
         /*
-            With ==, it only checks if the first variable matches the second one.
-            With .matches, it will test the first variable against a REGEX expression stored on the second var.
+            With ==, it checks for the memory reference of the object
+            With .matches, it will check the internal value of the object. It also allows for REGEX
         */
         // 6. Create three int variables and determine the largest.
         int numVarOne = 45;
